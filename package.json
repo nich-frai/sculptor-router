@@ -1,0 +1,19 @@
+{
+	"name": "@sculptor/router",
+	"version": "0.0.1",
+	"main": "src/index.ts",
+	"types": "src/index.ts",
+	"type": "module",
+	"scripts": {},
+	"devDependencies": {
+		"@sveltejs/vite-plugin-svelte": "^1.0.1",
+		"@tsconfig/svelte": "^3.0.0",
+		"svelte": "^3.49.0",
+		"svelte-preprocess": "^4.10.7",
+		"typescript": "^4.6.4",
+		"vite": "^3.0.0"
+	},
+	"dependencies": {
+		"path-to-regexp": "^6.2.1"
+	}
+}

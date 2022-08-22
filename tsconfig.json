@@ -1,0 +1,32 @@
+{
+  "extends": "@tsconfig/svelte/tsconfig.json",
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["DOM", "ESNext"],
+    "module": "ES2022",
+
+    "useDefineForClassFields": true,
+    "resolveJsonModule": true,
+
+    "outDir": "dist",
+
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "paths": {
+      "@sculptor/form": ["./src/index.ts"]
+    },
+
+    "strict": true,
+
+		"checkJs": false,
+		"allowJs": true,
+
+    "allowSyntheticDefaultImports": true,
+    "isolatedModules": true,
+    "importsNotUsedAsValues": "error",
+
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true
+  },
+  "include": ["src/**/*.ts", "src/**/*.svelte"]
+}
