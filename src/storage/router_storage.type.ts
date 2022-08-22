@@ -1,4 +1,4 @@
-import type { IRouterState } from '../router_controller';
+import type { IRouterState } from '../router.controller';
 import type { Writable } from 'svelte/store';
 
 export interface IRouterStorage {
@@ -8,5 +8,5 @@ export interface IRouterStorage {
 	
 	updateStore() : void;
 	updateStorage() : void;
-	
+
 }

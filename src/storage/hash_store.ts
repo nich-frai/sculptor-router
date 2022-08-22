@@ -1,5 +1,5 @@
 import type { Writable } from "svelte/store";
-import type { IRouterState } from "../router_controller";
+import type { IRouterState } from "../router.controller";
 import type { IRouterStorage } from "./router_storage.type";
 
 export class HashStorage implements IRouterStorage {
@@ -8,9 +8,7 @@ export class HashStorage implements IRouterStorage {
 	
 	#listenToHashEvents : boolean = false;
 
-	constructor(options? : IHashStorageOptions) {
-
-	}
+	constructor(options? : IHashStorageOptions) {}
 
 	setRouterStateStore(store: Writable<IRouterState>): void {
 		this.#store = store;
