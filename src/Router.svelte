@@ -79,3 +79,8 @@
     <slot />
   </div>
 {/if}
+<style>
+.router {
+	display: contents;	
+}
+</style>
