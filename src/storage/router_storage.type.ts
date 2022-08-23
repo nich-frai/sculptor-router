@@ -9,4 +9,7 @@ export interface IRouterStorage {
 	updateStore() : void;
 	updateStorage() : void;
 
+	initialize() : void;
+	destroy() : void;
+
 }

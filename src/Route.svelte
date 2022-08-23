@@ -1,6 +1,6 @@
 <script lang="ts">
   import { getContext, onMount } from "svelte";
-  import { IRouteActivationParams, RouterController } from "./router.controller";
+  import type { IRouteActivationParams, RouterController } from "./router.controller";
   import { writable } from "svelte/store";
 	import { match } from 'path-to-regexp';
 
@@ -14,7 +14,7 @@
 
   onMount(() => {
 		router.addRoute({
-			path,
+			path : path.startsWith('/') ? path : '/' + path,
 			matcher : pathMatcher,
 			activate(activationState) {
 				visibile.update(() => true);
@@ -24,7 +24,8 @@
 				visibile.update(() => false);
 				state  = undefined;
 			}
-		})
+		});
+
 	});
 </script>
 
